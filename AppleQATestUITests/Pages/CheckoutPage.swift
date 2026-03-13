@@ -8,7 +8,7 @@ final class CheckoutPage {
         self.app = app
     }
 
-    // MARK: - Screen
+    // Screen
 
     var screen: XCUIElement {
         app.otherElements["checkout.screen"]
@@ -18,7 +18,7 @@ final class CheckoutPage {
         XCTAssertTrue(screen.waitForExistence(timeout: timeout))
     }
 
-    // MARK: - Shipping / Profile
+    // Shipping / Profile
 
     var shippingSummary: XCUIElement {
         app.otherElements["checkout.shippingSummary"]
@@ -37,7 +37,7 @@ final class CheckoutPage {
         editProfileButton.tap()
     }
 
-    // MARK: - Payment
+    // Payment
 
     var paymentSummary: XCUIElement {
         app.otherElements["checkout.paymentSummary"]
@@ -55,7 +55,7 @@ final class CheckoutPage {
         editPaymentButton.tap()
     }
 
-    // MARK: - Promo
+    // Promo
 
     var promoField: XCUIElement {
         app.textFields["checkout.promoField"]
@@ -76,7 +76,7 @@ final class CheckoutPage {
         applyPromoButton.tap()
     }
 
-    // MARK: - Breakdown Rows
+    // Breakdown Rows
 
     var subtotalRow: XCUIElement {
         app.descendants(matching: .any).matching(identifier: "checkout.subtotalLabel").firstMatch
@@ -102,7 +102,7 @@ final class CheckoutPage {
         app.descendants(matching: .any).matching(identifier: "checkout.totalLabel").firstMatch
     }
 
-    // MARK: - Place Order
+    // Place Order
 
     var placeOrderButton: XCUIElement {
         app.buttons["checkout.placeOrderButton"]
@@ -117,7 +117,7 @@ final class CheckoutPage {
         placeOrderButton.tap()
     }
 
-    // MARK: - Convenience Assertions
+    // Convenience Assertions
 
     func assertShippingIsDisplayed() {
         XCTAssertTrue(shippingRow.waitForExistence(timeout: 2))
