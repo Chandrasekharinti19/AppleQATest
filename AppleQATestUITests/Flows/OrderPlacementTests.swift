@@ -80,7 +80,7 @@ final class OrderPlacementTests: BaseUITestCase {
         XCTAssertTrue(cart.emptyCartLabel.waitForExistence(timeout: 2))
     }
 
-    // MARK: - Helpers
+    // Helpers
 
     private func fillProfile(
         firstName: String,

@@ -97,7 +97,7 @@ final class CheckoutPromoTests: BaseUITestCase {
         XCTAssertEqual(checkout.promoStatusLabel.label, "Invalid code")
     }
 
-    // MARK: - Helpers
+    // Helpers
 
     private func dismissIfPresent(buttonTitle: String, timeout: TimeInterval) {
         let button = app.buttons[buttonTitle]
