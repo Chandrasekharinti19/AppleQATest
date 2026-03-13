@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "B4E7AFE1-AEF3-4AD6-8BF8-02FD74AB652B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:AppleQATest.xcodeproj",
+        "identifier" : "0F0887032F58106400A6EB7F",
+        "name" : "AppleQATestTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:AppleQATest.xcodeproj",
+        "identifier" : "0F08870D2F58106400A6EB7F",
+        "name" : "AppleQATestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
