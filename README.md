@@ -48,23 +48,6 @@ Payment
 - CVV validation
 
 --------------------------------------------------
-## App Screenshots
-
-### Login Screen
-![Login](Screenshots/login.png)
-
-### Product Catalog
-![Product List](Screenshots/product_list.png)
-
-### Product Detail
-![Product Detail](Screenshots/product_detail.png)
-
-### Cart
-![Cart](Screenshots/cart.png)
-
-### Checkout
-![Checkout](Screenshots/checkout.png)
-
 ## Demo
 
 UI flow demonstration:
