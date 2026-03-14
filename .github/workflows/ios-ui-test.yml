@@ -40,6 +40,7 @@ jobs:
             -destination 'platform=iOS Simulator,name=iPhone 16' \
             -only-testing:AppleQATestUITests/CheckoutPromoTests \
             -parallel-testing-enabled NO \
+            -resultBundlePath TestResults_${{ matrix.environment }} \
             | tee xcodebuild-${{ matrix.environment }}.log
 
       - name: Upload test log
