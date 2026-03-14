@@ -60,9 +60,9 @@ final class CheckoutPromoTests: BaseUITestCase {
         let login = LoginPage(app: app)
         login.login(email: "test@test.com", password: "123456")
 
-        //dismissIfPresent(buttonTitle: "Not Now", timeout: 2)
-        //dismissIfPresent(buttonTitle: "Not Now", timeout: 2)
-        //dismissIfPresent(buttonTitle: "Cancel", timeout: 1)
+        dismissIfPresent(buttonTitle: "Not Now", timeout: 2)
+        dismissIfPresent(buttonTitle: "Not Now", timeout: 2)
+        dismissIfPresent(buttonTitle: "Cancel", timeout: 1)
 
 
         // Products
