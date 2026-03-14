@@ -39,6 +39,7 @@ jobs:
           xcodebuild test \
             -project AppleQATest.xcodeproj \
             -scheme AppleQATest \
+            -testPlan AppleQATestTestPlan
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
             -only-testing:AppleQATestUITests/ProductConfigurationMatrixTests \
             -parallel-testing-enabled YES \
