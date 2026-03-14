@@ -37,8 +37,8 @@ jobs:
             -project AppleQATest.xcodeproj \
             -scheme AppleQATest \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
-            -only-testing:AppleQATestUITests/ProductConfigurationMatrixTests \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -only-testing:AppleQATestUITests/CheckoutPromoTests \
             -parallel-testing-enabled YES \
             | tee xcodebuild-${{ matrix.environment }}.log
 
