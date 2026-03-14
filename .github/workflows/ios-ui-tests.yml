@@ -32,6 +32,8 @@ jobs:
         run: xcrun simctl list devices available
 
       - name: Run Product Configuration Matrix UI Test
+        env:
+          APP_ENV: ${{ matrix.environment }}
         run: |
           set -o pipefail
           xcodebuild test \
