@@ -4,3 +4,4 @@ enum TestData {
     static let validPassword = "123456"
 
 }
+

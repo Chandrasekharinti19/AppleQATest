@@ -10,22 +10,16 @@ class BaseUITestCase: XCTestCase {
         continueAfterFailure = false
         app = XCUIApplication()
 
-        let args = ProcessInfo.processInfo.arguments
-
         app.launchArguments.append("-uiTesting")
+        app.launchArguments.append("-resetData")
 
-        if let envIndex = args.firstIndex(of: "-environment"),
-           envIndex + 1 < args.count {
+        if let environment = ProcessInfo.processInfo.environment["APP_ENV"] {
             app.launchArguments.append("-environment")
-            app.launchArguments.append(args[envIndex + 1])
-        }
-
-        if args.contains("-resetData") {
-            app.launchArguments.append("-resetData")
+            app.launchArguments.append(environment)
+            print("Running UI tests in environment: \(environment)")
         }
 
         app.launch()
-//        dismissCommonInterruptions()
     }
 
     override func record(_ issue: XCTIssue) {
