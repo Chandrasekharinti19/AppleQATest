@@ -32,14 +32,13 @@ jobs:
         run: xcrun simctl list devices available
 
       - name: Run Product Configuration Matrix UI Test
-        env:
-          APP_ENV: ${{ matrix.environment }}
         run: |
           set -o pipefail
           xcodebuild test \
             -project AppleQATest.xcodeproj \
             -scheme AppleQATest \
             -testPlan AppleQATestTestPlan
+            -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
             -only-testing:AppleQATestUITests/ProductConfigurationMatrixTests \
             -parallel-testing-enabled YES \
