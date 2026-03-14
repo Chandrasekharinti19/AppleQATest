@@ -39,7 +39,7 @@ jobs:
             -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 16' \
             -only-testing:AppleQATestUITests/CheckoutPromoTests \
-            -parallel-testing-enabled YES \
+            -parallel-testing-enabled NO \
             | tee xcodebuild-${{ matrix.environment }}.log
 
       - name: Upload test log
