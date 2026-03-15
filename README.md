@@ -1,6 +1,6 @@
 # AppleQATest
 
-[![iOS UI Tests](https://github.com/Chandrasekharinti19/AppleQATest/actions/workflows/ios-ui-tests.yml/badge.svg)](https://github.com/Chandrasekharinti19/AppleQATest/actions/workflows/ios-ui-test.yml)
+[![iOS UI Tests](https://github.com/Chandrasekharinti19/AppleQATest/actions/workflows/ios-ui-test.yml/badge.svg)](https://github.com/Chandrasekharinti19/AppleQATest/actions/workflows/ios-ui-test.yml)
 A SwiftUI Apple Store–style demo application with a production-style XCTest UI automation framework.
 
 This project demonstrates how to build a modern iOS application while implementing a scalable UI test architecture using XCTest, Page Object Model, and Xcode Test Plans with multi-environment and parallel execution support.
