@@ -1,5 +1,6 @@
 # AppleQATest
 
+[![iOS UI Tests](https://github.com/Chandrasekharinti19/AppleQATest/actions/workflows/ios-ui-tests.yml/badge.svg)](https://github.com/Chandrasekharinti19/AppleQATest/actions/workflows/ios-ui-tests.yml)
 A SwiftUI Apple Store–style demo application with a production-style XCTest UI automation framework.
 
 This project demonstrates how to build a modern iOS application while implementing a scalable UI test architecture using XCTest, Page Object Model, and Xcode Test Plans with multi-environment and parallel execution support.
@@ -163,6 +164,27 @@ Running simultaneously.
 
 --------------------------------------------------
 
+GitHub Actions CI Pipeline
+
+The project includes a **fully automated CI pipeline**.
+
+Workflow triggers:
+
+- Push to main
+- Pull requests
+- Manual workflow dispatch
+
+Pipeline features:
+
+- macOS GitHub runner
+- iOS simulator testing
+- Parallel environment execution
+- Automated test logging
+- Failure screenshot capture
+- Artifact uploads
+
+--------------------------------------------------
+
 SCREENSHOT CAPTURE ON FAILURE
 
 BaseUITestCase automatically captures screenshots when a test fails.
@@ -239,8 +261,15 @@ FUTURE IMPROVEMENTS
 
 - API integration for product catalog
 - UI snapshot testing
-- GitHub Actions CI pipeline
 - Device matrix testing
 - Performance tests using XCTest
+
+--------------------------------------------------
+
+ Author
+
+**Chandrasekhar Inti**
+
+QA Automation Engineer
 
 
